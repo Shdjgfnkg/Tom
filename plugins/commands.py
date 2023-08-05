@@ -23,7 +23,7 @@ from info import (
     PROTECT_CONTENT,
 )
 from plugins.fsub import ForceSub
-from Script import script
+from script import Script as script
 from utils import get_settings, get_size, save_group_settings, temp
 
 logger = logging.getLogger(__name__)
