@@ -22,7 +22,7 @@ from database.connections_mdb import (active_connection, all_connections,
 from database.filters_mdb import del_all, find_filter, get_filters
 from database.ia_filterdb import Media, get_file_details, get_search_results
 from database.users_chats_db import db
-from info import ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, REQ_CHANNEL
+from info import ADMINS, AUTH_CHANNEL, CHANNEL_LINK, GROUP_LINK, OWNER, CUSTOM_FILE_CAPTION, REQ_CHANNEL
 from script import Script as script
 from utils import (get_poster, get_settings, get_size, is_subscribed,
                    save_group_settings, scheduler, search_gagala, temp)
