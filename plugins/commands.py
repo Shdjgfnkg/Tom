@@ -15,6 +15,9 @@ from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
 from info import (
     ADMINS,
+    CHANNEL_LINK,
+    OWNER,
+    GROUP_LINK,
     BATCH_FILE_CAPTION,
     CHANNELS,
     CUSTOM_FILE_CAPTION,
