@@ -34,6 +34,9 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+GROUP_LNK = environ.get('GRP_LNK', 'https://t.me/c_i_n_i_m_a_v_i_l_l_a')
+CHANNEL_LNK = environ.get('CHNL_LNK', 'https://telegram.me/CV_Community')
+OWNER = environ.get('OWNER', 'https://t.me/DREM_HAKER')
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
