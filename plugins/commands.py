@@ -71,29 +71,17 @@ async def start(client, message):
             script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention),
         )
     if len(message.command) != 2:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    "🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʟɪɴᴋs 🔗", url=f"https://t.me/CMV_Links"
-                )
-            ],
-            [
-                InlineKeyboardButton("📌 ᴍʏ ɢʀᴏᴜᴘ", url="https://t.me/CM_Villa"),
-                InlineKeyboardButton(
-                    "⚒️ ᴍʏ ᴏᴡɴᴇʀ", url="https://t.me/kuruthamkettavan"
-                ),
-            ],
-            [
-                InlineKeyboardButton("⚠️ ʜᴇʟᴘ", callback_data="help"),
-                InlineKeyboardButton("⚙️ ᴀʙᴏᴜᴛ", callback_data="about"),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕",
-                    url=f"http://t.me/{temp.U_NAME}?startgroup=true",
-                )
-            ],
-        ]
+        buttons = [[ 
+            InlineKeyboardButton('🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗', url=CHANNEL_LINK)
+            ],[
+            InlineKeyboardButton('📯 ᴍʏ ɢʀᴏᴜᴘ', url=GROUP_LINK),
+            InlineKeyboardButton('⚒️ ᴍʏ ᴏᴡɴᴇʀ', url=OWNER)
+            ],[
+            InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('⚙️ ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton("➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
@@ -117,29 +105,17 @@ async def start(client, message):
             await ForceSub(client, message)
             return
 
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    "🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʟɪɴᴋs 🔗", url=f"https://t.me/CMV_Links"
-                )
-            ],
-            [
-                InlineKeyboardButton("📌 ᴍʏ ɢʀᴏᴜᴘ", url="https://t.me/CM_Villa"),
-                InlineKeyboardButton(
-                    "⚒️ ᴍʏ ᴏᴡɴᴇʀ", url="https://t.me/kuruthamkettavan"
-                ),
-            ],
-            [
-                InlineKeyboardButton("⚠️ ʜᴇʟᴘ", callback_data="help"),
-                InlineKeyboardButton("⚙️ ᴀʙᴏᴜᴛ", callback_data="about"),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕",
-                    url=f"http://t.me/{temp.U_NAME}?startgroup=true",
-                )
-            ],
-        ]
+        buttons = [[ 
+            InlineKeyboardButton('🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs 🔗', url=CHANNEL_LINK)
+            ],[
+            InlineKeyboardButton('📯 ᴍʏ ɢʀᴏᴜᴘ', url=GROUP_LINK),
+            InlineKeyboardButton('⚒️ ᴍʏ ᴏᴡɴᴇʀ', url=OWNER)
+            ],[
+            InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('⚙️ ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton("➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
