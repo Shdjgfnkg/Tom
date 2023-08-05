@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media
 from database.users_chats_db import db
 from info import ADMINS, LOG_CHANNEL, MELCOW_NEW_USERS, SUPPORT_CHAT
-from Script import script
+from script import Script as script
 from utils import get_settings, get_size, temp
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
